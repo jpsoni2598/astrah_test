@@ -21,7 +21,7 @@
 
     'assets': {
         'web.assets_backend': [
-            'astrah_test/static/src/css/tailwind.bundle.css',
+            'astrah_test/static/src/css/tailwind.css',
             'astrah_test/static/src/js/test_component.js',
             'astrah_test/static/src/xml/test_component.xml',
         ],
