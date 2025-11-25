@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- List View -->
+    <record id="view_astrah_lead_list" model="ir.ui.view">
+        <field name="name">astrah.lead.list</field>
+        <field name="model">astrah.lead</field>
+        <field name="arch" type="xml">
+            <list string="Astrah Test Leads">
+                <field name="name"/>
+                <field name="customer_name"/>
+                <field name="priority"/>
+                <field name="value"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_astrah_lead_form" model="ir.ui.view">
+        <field name="name">astrah.lead.form</field>
+        <field name="model">astrah.lead</field>
+        <field name="arch" type="xml">
+            <form class="p-4">
+                <sheet>
+                    <!-- using tailwind classes to showcase the styling -->
+                    <div class="border-b border-gray-900/10 pb-12">
+                        <h2 class="text-base font-semibold text-gray-900">
+                            Lead Information
+                        </h2>
+                        <p class="mt-1 text-sm text-gray-600">
+                            Basic details for this Astrah lead.
+                        </p>
+
+                        <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+                            <!-- Name -->
+                            <div class="sm:col-span-3">
+                                <label class="block text-sm font-medium text-gray-900" for="name">
+                                    Name
+                                </label>
+                                <div class="mt-2">
+                                    <field name="name" nolabel="1"
+                                        class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900"/>
+                                </div>
+                            </div>
+
+                            <!-- Customer Name -->
+                            <div class="sm:col-span-3">
+                                <label class="block text-sm font-medium text-gray-900" for="customer_name">
+                                    Customer name
+                                </label>
+                                <div class="mt-2">
+                                    <field name="customer_name" nolabel="1"
+                                        class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900"/>
+                                </div>
+                            </div>
+
+                            <!-- Value -->
+                            <div class="sm:col-span-3">
+                                <label class="block text-sm font-medium text-gray-900" for="value">
+                                    Estimated value
+                                </label>
+                                <div class="mt-2">
+                                    <field name="value" nolabel="1"
+                                        class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900"/>
+                                </div>
+                            </div>
+
+                            <!-- Priority -->
+                            <div class="sm:col-span-3">
+                                <label class="block text-sm font-medium text-gray-900" for="priority">
+                                    Priority
+                                </label>
+                                <div class="mt-2">
+                                    <field name="priority" nolabel="1"
+                                        class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900"/>
+                                </div>
+                            </div>
+
+                            <!-- Description -->
+                            <div class="sm:col-span-6">
+                                <label class="block text-sm font-medium text-gray-900" for="description">
+                                    Description
+                                </label>
+                                <div class="mt-2">
+                                    <field name="description" nolabel="1"
+                                        class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900" placeholder="Enter description..."/>
+                                </div>
+                            </div>
+
+                            <!-- OWL Component -->
+                            <div class="sm:col-span-6">
+                                <widget name="astrah_test_ping_console" class="d-inline-block"/>
+                            </div>
+
+                        </div>
+                    </div>
+                </sheet>
+
+            </form>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_astrah_lead" model="ir.actions.act_window">
+        <field name="name">Astrah Test Leads</field>
+        <field name="res_model">astrah.lead</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

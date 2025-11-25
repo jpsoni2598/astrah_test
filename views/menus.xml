@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <menuitem id="menu_astrah_root" name="CRM" sequence="10"/>
+
+    <menuitem id="menu_astrah_lead"
+              name="Astrah Test Leads"
+              parent="menu_astrah_root"
+              action="action_astrah_lead"/>
+
+</odoo>

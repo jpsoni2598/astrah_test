@@ -1,0 +1,28 @@
+{
+  "name": "astrah_test",
+  "version": "1.0.0",
+  "description": "Custom Odoo 19 module built for the Astrah OS technical evaluation. It showcases a clean ORM model, Tailwind-powered backend views, and a lightweight OWL component embedded directly inside the form.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpsoni2598/astrah_test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpsoni2598/astrah_test/issues"
+  },
+  "homepage": "https://github.com/jpsoni2598/astrah_test#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.22",
+    "postcss": "^8.5.6"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.17",
+    "tailwindcss": "^4.1.17"
+  }
+}
